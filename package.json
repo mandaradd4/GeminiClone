@@ -1,13 +1,16 @@
 {
-  "name": "package.json",
+  "name": "gemini-clone",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/mandaradd4/GeminiClone.git",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.0",
